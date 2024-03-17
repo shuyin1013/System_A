@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID-19 Pandemic Data Analysis</title>
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+    <header>
+    <div class="date-picker-container">
+        <input type="date" id="datePicker" min="2020-01-22" max="2020-07-27" value="2020-07-27">
+    </div>
+    <h1>COVID-19 Pandemic Data Analysis</h1>
+    </header>
+
+
+    <section class="mainbox">
+        <div class="column">
+            <div class="no">
+                <div class="no-hd">
+                    <ul>
+                        <li style="color: rgb(242, 165, 132)">New cases</li>
+                        <li style="color: rgb(71, 146, 196)">New recovered</li>
+                        <li style="color: rgb(177, 24, 45)">New deaths</li>
+                    </ul>
+                </div>
+                <div class="no-bd">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="no">
+                <div class="no-hd">
+                    <ul>
+                        <li style="color: rgb(242, 165, 132)">Confirmed</li>
+                        <li style="color: rgb(71, 146, 196)">Recovered</li>
+                        <li style="color: rgb(177, 24, 45)">Deaths</li>
+                    </ul>
+                </div>
+                <div class="no-bd">
+                    <ul>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="map" id="map"></div>
+        </div>
+        <div class="column">
+            <div class="parent">
+                <div class="chart" id="chart1"></div>
+            </div>
+            <div class="parent">
+                <div class="chart" id="chart2"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/flexible.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/world.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.27.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.24.0"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
